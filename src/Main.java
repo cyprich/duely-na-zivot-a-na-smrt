@@ -1,14 +1,14 @@
-package sk.uniza.fri.main_studenti;
+package sk.uniza.fri.main_studenti.src;
 
-import sk.uniza.fri.HeroUnit;
-import sk.uniza.fri.heroes.ArmedHero;
-import sk.uniza.fri.heroes.Ghoul;
-import sk.uniza.fri.heroes.HeroClass;
-import sk.uniza.fri.heroes.Priest;
-import sk.uniza.fri.weapons.HPReaper;
-import sk.uniza.fri.weapons.HolyHandGrenade;
-import sk.uniza.fri.weapons.Weapon;
-import sk.uniza.fri.weapons.WeaponType;
+import sk.uniza.fri.main_studenti.src.HeroUnit;
+import sk.uniza.fri.main_studenti.src.heroes.ArmedHero;
+import sk.uniza.fri.main_studenti.src.heroes.Ghoul;
+import sk.uniza.fri.main_studenti.src.heroes.HeroClass;
+import sk.uniza.fri.main_studenti.src.heroes.Priest;
+import sk.uniza.fri.main_studenti.src.weapons.HPReaper;
+import sk.uniza.fri.main_studenti.src.weapons.HolyHandGrenade;
+import sk.uniza.fri.main_studenti.src.weapons.Weapon;
+import sk.uniza.fri.main_studenti.src.weapons.WeaponType;
 
 public class Main {
 
