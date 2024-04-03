@@ -9,7 +9,7 @@ public class HPReaper extends Weapon {
 
     @Override
     public double computeAttackPower(Hero opponent) {
-
+        return this.getBaseAttackPower();
     }
 
 
