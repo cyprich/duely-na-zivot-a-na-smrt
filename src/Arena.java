@@ -17,6 +17,7 @@ public class Arena {
 
     public void performDuelsInUnit() {
         System.out.println("Starting duels between units: \n  " + this.heroUnit1.getName() + "\n  " + this.heroUnit2.getName());
+
         while (this.heroUnit1.numberOfHeroes() > 0 && this.heroUnit2.numberOfHeroes() > 0) {
             Hero hero1 = this.duelSelector.pickHero(heroUnit1);
             Hero hero2 = this.duelSelector.pickHero(heroUnit2);
@@ -34,6 +35,6 @@ public class Arena {
             }
         }
 
-        System.out.println("Winning unit is: " + (this.heroUnit1.numberOfHeroes() == 0 ? this.heroUnit2.getName() : this.heroUnit1.getName()));
+        System.out.println("Winning unit is: " + (this.heroUnit1.numberOfHeroes() == 0 ? this.heroUnit2.getName() : this.heroUnit1.getName()) + "\n\n");
     }
 }
