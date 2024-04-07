@@ -19,8 +19,8 @@ public class Arena {
         System.out.println("Starting duels between units: \n  " + this.heroUnit1.getName() + "\n  " + this.heroUnit2.getName());
 
         while (this.heroUnit1.numberOfHeroes() > 0 && this.heroUnit2.numberOfHeroes() > 0) {
-            Hero hero1 = this.duelSelector.pickHero(heroUnit1);
-            Hero hero2 = this.duelSelector.pickHero(heroUnit2);
+            Hero hero1 = this.duelSelector.pickHero(this.heroUnit1);
+            Hero hero2 = this.duelSelector.pickHero(this.heroUnit2);
 
             hero1.performAttack(hero2);
             if (!hero2.isAlive()) {

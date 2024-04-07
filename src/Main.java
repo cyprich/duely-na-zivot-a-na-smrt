@@ -15,7 +15,7 @@ public class Main {
         HeroUnit undeadUnit = new HeroUnit("Undeads");
         HeroUnit humanUnit2 = new HeroUnit("Great humans");
         HeroUnit undeadUnit2 = new HeroUnit("Deadly undeads");
-        ArmedHero human1 = new ArmedHero(50, 2, "Fast Jano", HeroClass.WARRIOR ,new Weapon(3, WeaponType.SWORD));
+        ArmedHero human1 = new ArmedHero(50, 2, "Fast Jano", HeroClass.WARRIOR, new Weapon(3, WeaponType.SWORD));
         ArmedHero human2 = new ArmedHero(50, 3, "Strong Fero", HeroClass.WARRIOR, new HolyHandGrenade(3));
         Priest priest = new Priest(45, 3, "Priest Stano", new Weapon(1, WeaponType.STAFF));
         Priest priest2 = new Priest(40, 2, "Priest Marian", new Weapon(2, WeaponType.STAFF));
