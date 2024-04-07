@@ -15,23 +15,19 @@ public class Ghoul extends Hero {
     }
 
     @Override
-    public void receiveAttack(double damage) {
-        super.receiveAttack(damage);
-        if (this.getHealthPoints() <= 0 && !this.ozivSa()) {
-            this.zomri();
-        }
+    protected void setHealthPoints(double healthPoints) {
+        super.setHealthPoints(healthPoints);
     }
 
     /**
-     * Oživí ghoula, ak ešte nebol ozivený.
+     * Ozivi Ghoula, ak este nebol oziveny
      *
-     * @return true, ak sa podarilo oživiť, inak false
+     * @return true ak sa podarilo ozivit, inak false
      */
-    private boolean ozivSa() {
+    public boolean ozivSa() {
         if (!this.uzBolOziveny) {
             this.setHealthPoints(this.povodneZivoty * 0.9);
             this.uzBolOziveny = true;
-            System.out.println(this.getName() + " was resurrected with " + this.getHealthPoints() + " HP!");
             return true;
         }
         return false;
