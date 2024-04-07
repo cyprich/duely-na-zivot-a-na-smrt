@@ -17,10 +17,8 @@ public class Ghoul extends Hero {
     @Override
     public void receiveAttack(double damage) {
         super.receiveAttack(damage);
-        if (this.getHealthPoints() <= 0) {
-            if (!this.ozivSa()) {
-                this.zomri();
-            }
+        if (this.getHealthPoints() <= 0 && !this.ozivSa()) {
+            this.zomri();
         }
     }
 

@@ -2,6 +2,7 @@ package sk.uniza.fri.main_studenti.src;
 
 import sk.uniza.fri.main_studenti.src.heroes.*;
 import sk.uniza.fri.main_studenti.src.heroselectors.FirstHeroSelector;
+import sk.uniza.fri.main_studenti.src.heroselectors.WeakestHeroSelector;
 import sk.uniza.fri.main_studenti.src.weapons.HPReaper;
 import sk.uniza.fri.main_studenti.src.weapons.HolyHandGrenade;
 import sk.uniza.fri.main_studenti.src.weapons.Weapon;
@@ -37,5 +38,8 @@ public class Main {
         //TODO: dorobit vytvorenie areny a spustit duely
         Arena arena1 = new Arena(humanUnit, undeadUnit, new FirstHeroSelector());
         arena1.performDuelsInUnit();
+
+        Arena arena2 = new Arena(humanUnit2, undeadUnit2, new WeakestHeroSelector());
+        // arena2.performDuelsInUnit();
     }
 }

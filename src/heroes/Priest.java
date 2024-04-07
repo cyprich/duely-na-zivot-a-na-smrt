@@ -11,7 +11,7 @@ public class Priest extends ArmedHero{
     @Override
     protected double computeAttackPower(Hero opponent) {
         if (this.getWeapon().getWeaponType() == WeaponType.STAFF) {
-            return this.getAttackPower() * 10;
+            return this.getAttackPower() * this.getWeapon().getBaseAttackPower() * 10;
         }
         return this.getAttackPower() * getWeapon().getBaseAttackPower();
     }
