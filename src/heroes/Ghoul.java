@@ -31,6 +31,7 @@ public class Ghoul extends Hero {
         if (!this.uzBolOziveny) {
             this.setHealthPoints(this.povodneZivoty * 0.9);
             this.uzBolOziveny = true;
+            System.out.println(this.getName() + " was resurrected with " + this.getHealthPoints() + " HP!");
             return true;
         }
         return false;
