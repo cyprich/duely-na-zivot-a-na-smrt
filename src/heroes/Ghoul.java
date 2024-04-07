@@ -23,7 +23,7 @@ public class Ghoul extends Hero {
     }
 
     /**
-     * Oživí ghoula, ak ešte nebol ozivený.
+     * Oživí ghoula, ak ešte nebol oziveny.
      *
      * @return true, ak sa podarilo oživiť, inak false
      */

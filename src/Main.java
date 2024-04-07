@@ -40,6 +40,6 @@ public class Main {
         arena1.performDuelsInUnit();
 
         Arena arena2 = new Arena(humanUnit2, undeadUnit2, new WeakestHeroSelector());
-        // arena2.performDuelsInUnit();
+        arena2.performDuelsInUnit();
     }
 }
